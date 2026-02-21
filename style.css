@@ -20,7 +20,7 @@
 
 .container {
   height: 100vh;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 
@@ -57,7 +57,7 @@
   /* main navigation styling */
 .main-container {
   height: auto;
-  background-color: red;
+  /* background-color: red; */
   max-width: 1270px;
   margin:auto;
 }
@@ -120,4 +120,62 @@
 
 
   /* main-right */
-/* .icon { width: 40px; height: 40px; fill: white; } */
+  .main-content{
+    padding:0 1rem;
+  }
+  .main-repos{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-sm);
+  }
+  .main-contributions{
+    
+    margin-top: var(--margin-sm);
+  }
+  .main-contribution-activity{
+    margin:var(--margin-sm) 0 0 0;
+    display: flex;
+  }
+  .main-contri-left{
+    flex:2;
+  }
+  .contribution-left
+  {
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    position: relative;
+    padding: 0 var(--padding-sm);
+    
+    margin:var(--margin-sm) 0 0 0;
+  }
+  .contri-info{
+    display:flex ;
+    justify-content: space-between;
+  }
+  .contri-info-desc{
+    display: flex;
+    gap: var(--gap-sm);
+  }
+  .abs{
+    position: absolute;
+    top:-10px;
+    left: 0;
+  }
+  .abs-left
+  {
+    position: absolute;
+    left:-10px;
+    top:40px;  
+  }
+
+  .main-contri-right{
+    flex:1;
+  }
+  
+  .contri-right--secondarybtn,.contri-right--primarybtn{
+    width: 100%;
+    padding: 0.5rem 0.2rem;
+    margin-top: 0.5rem;
+  }
+
