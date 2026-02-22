@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid black;  
 }
 
 /* root variables */
@@ -21,6 +21,7 @@
 .container {
   height: 100vh;
   /* color: var(--font-color); */
+  /* background-color: var(); */
 }
 
 
@@ -37,6 +38,7 @@
   .header__left {
   background-color: brown;
   }
+
   .header__left-list,.main-container__nav-list {
     display: flex;
     list-style-type: none;
@@ -56,17 +58,21 @@
 
   /* main navigation styling */
 .main-container {
-  height: auto;
+  height:auto;
   /* background-color: red; */
   max-width: 1270px;
   margin:auto;
+  /* z-index:-4; */
 }
     .main-container__nav{
         background-color: aqua;
         display: flex;
         margin-top: var(--margin-sm);
-    }
-    .main-container__nav-space{
+        position:sticky ;
+        top: 0;
+        z-index: 1;
+      }
+      .main-container__nav-space{
         flex:1;
         /* margin-left:var(--margin-main-high); */
         background-color: beige;
@@ -82,15 +88,10 @@
 }
 .main-aside {
   flex: 1;
+  z-index: 100;
 }
 .main-content{
   flex: 3;
-}
-.aside-top{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 .aside-top {
   /* text-align: center; */
@@ -99,8 +100,10 @@
   gap: var(--gap-sm);
   padding: var(--padding-sm) 0;
   border-bottom: 2px solid white;
+  /* z-index: 100; */
 }
 .aside-profile{
+  z-index: 2000;
     background-color: aquamarine;
     max-width: 250px;
     width: 100%;
@@ -138,7 +141,7 @@
     display: flex;
   }
   .main-contri-left{
-    flex:2;
+    flex:3;
   }
   .contribution-left
   {
@@ -161,6 +164,7 @@
     position: absolute;
     top:-10px;
     left: 0;
+    /* margin-bottom: var(--margin-sm); */
   }
   .abs-left
   {
@@ -171,11 +175,31 @@
 
   .main-contri-right{
     flex:1;
+    padding-left: var(--padding-sm);
   }
   
   .contri-right--secondarybtn,.contri-right--primarybtn{
     width: 100%;
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 0rem;
     margin-top: 0.5rem;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--margin-sm);
+    padding: var(--padding-sm) 0;
+    max-width: 1270px;
+    margin:auto;
+  }
+  .footer-left,.footer-right{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  .footer-mid{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
   }
 
