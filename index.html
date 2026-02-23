@@ -107,29 +107,38 @@
             </section>
           </aside>
           <main class="main-content">
-          <section>
-            <h2>Popular Repositories</h2>
+          <section class="repos-container">
+            <h4>Popular Repositories</h4>
             <div class="main-repos">
-              <div>
+              <div class="repo-details">
                 <span>
                   <a>Repo1</a>
                   <span>Public</span>
                 </span>
-                <p>Typescript</p>
+                 <div class="language-details">
+                    <span class="language-color"></span>
+                    <p>Typescript</p>
+                 </div>
               </div>
-              <div>
+              <div class="repo-details">
                 <span>
                   <a>Repo2</a>
                   <span>Public</span>
                 </span>
-                <p>Typescript</p>
+                <div class="language-details">
+                    <span class="language-color"></span>
+                    <p>Typescript</p>
+                 </div>
               </div>
-              <div>
+              <div class="repo-details">
                 <span>
                   <a>Repo3</a>
                   <span>Public</span>
                 </span>
-                <p>Typescript</p>
+                <div class="language-details">
+                    <span class="language-color"></span>
+                    <p>Typescript</p>
+                 </div>
               </div>
             </div>
           </section>  
@@ -137,7 +146,8 @@
           <section class="main-contributions">
             <h2>75 Contributions in the last year</h2>
             <div class="main-graph">
-              <svg width="auto" height="128" class="js-calendar-graph-svg">
+                <img src="images/contribution.png" alt="Contribution graph" class="main-graph-image" >
+              <!-- <svg width="auto" height="128" class="js-calendar-graph-svg">
                 <g transform="translate(10, 20)" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:19148526,&quot;target&quot;:&quot;CONTRIBUTION_CALENDAR_SQUARE&quot;,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/profile&quot;}}" data-hydro-click-hmac="43142f2e37b8fca33887f3a6932e04001b254b83d3c9f8a84eaee80eacc9f16b">
                     <g transform="translate(0, 0)">
                         <rect width="11" height="11" x="16" y="0" class="ContributionCalendar-day" rx="2" ry="2" data-count="0" data-date="2020-10-25" data-level="0"></rect>
@@ -633,39 +643,49 @@
                   <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="57" style="display: none;">Thu</text>
                   <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="85">Fri</text>
                   <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="81" style="display: none;">Sat</text>
-              </g></svg>
+              </g></svg> -->
             </div>
           </section>
 
           <section class="main-contribution-activity">
             <div class="main-contri-left">
-              <h2>Contribution Activity</h2>
-              <div class="contribution-left">
-                <span class="abs"><p>OCtober 2021</p></span>
-                <span class="abs-left">Logo</span>
-                <!-- <div> -->
-                <span><h3>Created Repository</h3></span>
+              <h3>Contribution Activity</h3>
+              <div class="contribution-left"> 
+                <p>
+                    <span id="after">October 2021</span>
+                </p> 
+                <div class="repo-updates">
+                    <svg class="icons icons-circle ">
+                        <use xlink:href="icons.svg#repository"></use>
+                    </svg>
+                    <h3>Created Repository</h3>
+                </div>
                 <div class="contri-info">
-                  <p>Profile/p2p-chat</p>
+                    <div class="contri-repo-details">
+                        <svg class="icons icons-sm">
+                            <use xlink:href="icons.svg#repository"></use>
+                        </svg> 
+                        <p> Profile/p2p-chat</p>
+                    </div>
                   <span class="contri-info-desc">
                     <p>Typescript</p>
                     <p>Oct10</p>
                   </span>
                 </div>
-                <!-- </div> -->
-                <button>Show more activity</button>
+                
               </div>
+              <button class="secondary-btn main-contri-left-button">Show more activity</button>
             </div>
             <div class="main-contri-right">
-              <button class="contri-right--primarybtn">
+              <button class="contri-right--primarybtn primary-btn">
                 2026
-              </button class=contri-right--secondarybtn>
-              <button class=contri-right--secondarybtn>
+              </button>
+              <button class="contri-right--secondarybtn secondary-btn">
                 2025
               </button>
-              <button class=contri-right--secondarybtn>2024</button>
-              <button class=contri-right--secondarybtn>2023</button>
-              <button class=contri-right--secondarybtn>2022</button>
+              <button class="contri-right--secondarybtn secondary-btn" >2024</button>
+              <button class="contri-right--secondarybtn secondary-btn" >2023</button>
+              <button class="contri-right--secondarybtn secondary-btn">2022</button>
             </div>
           </section>
           </main>
@@ -682,7 +702,9 @@
             <p>Docs</p>
         </section>
         <section class="footer-mid">
-            logo
+            <svg class="icons icons-mid"> 
+                <use href="icons.svg#logo"></use>
+            </svg>
         </section>
         <section class="footer-right">
             <p>Contact</p>
