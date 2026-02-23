@@ -48,30 +48,47 @@
       </header>
      
        <!-- main -->
-      <div class="main-container">
+     <div class="main"> 
+       <div class="main-container">
+        <div class="main-container-navigation">
         <nav class="main-container__nav">
             <div class="main-container__nav-space"></div>
             <div class="main-container__nav-content">
                 <ul class="main-container__nav-list">
-                    <li><a href="#">OverView</a></li>
-                    <li><a href="#">Repositories</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Packages</a></li>
+                    <li>
+                            <svg class="icons icons-sm">
+                                <use xlink:href="icons.svg#overview-book"></use>
+                            </svg>
+                       <a href="#"> OverView</a></li>
+                    <li>
+                          <svg class="icons icons-sm">
+                                <use xlink:href="icons.svg#repository"></use>
+                            </svg>
+                        <a href="#">Repositories</a></li>
+                    <li> <svg class="icons icons-sm">
+                                <use xlink:href="icons.svg#project"></use>
+                            </svg>
+                        <a href="#">Projects</a></li>
+                    <li>
+                         <svg class="icons icons-sm">
+                                <use xlink:href="icons.svg#package"></use>
+                            </svg><a href="#">Packages</a></li>
                 </ul>
             </div>
         </nav>
+        </div>
         <div class="main-wrapper">
           <aside class="main-aside">
             <section class="aside-top">
                 <a href="#"> <img src="images/ls.jpg" class="aside-profile" alt=""></a>
                 <span>
-                  <p>Jenith Panchal</p>
-                <p>Profile</p>
-              </span>
-                <button>Follow </button>
+                  <h1>Jenith Panchal</h1>
+                  <p>React | Node  | ❤️</p>
+                </span>
+                <button class="secondary-btn ">Follow </button>
                 <div class="aside-follow-details">
-                    <span><p>Followers</p></span>
-                    <span><p>following</p></span>
+                    <span><p>29 Followers</p></span>
+                    <span><p>89 following</p></span>
                     <span><p>68</p></span>
                 </div>
             </section>
@@ -645,7 +662,6 @@
           </main>
         </div>
       </div>
-
       <!-- footer -->
        <footer class="footer">
         <section class="footer-left">
@@ -668,6 +684,9 @@
             <p>About</p>
         </section>
        </footer>
+      </div>
+
+      
     </div>
   </body>
 </html>
