@@ -14,9 +14,14 @@
     <div class="container">
       <!-- header -->
       <header class="header">
+            <div class="header-container">
                 <nav class="header__left">
+                    <a href="#">
+                        <svg class="icons">
+                            <use xlink:href="icons.svg#logo"></use>
+                        </svg>
+                    </a>
                 <ul class="header__left-list">
-                    <li><a href="#">Logo</a></li>
                     <li><a href="#">Why Github?</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Enterprise</a></li>
@@ -26,12 +31,19 @@
                 </ul>
                 </nav>
             <div class="header__right">
-                <search class="header__search">
-                    <input type="text" placeholder="Search">
-                    /
+                <search class="" >
+                    <input type="text" placeholder="Search"  class="header__search">
                 </search>
                 <a href="#">SignIn</a>
-                <button>Signup</button>
+                <button class="header__right--secondary-btn">Signup</button>
+            </div>
+            
+            <div class="icon-visible header-small ">
+                <button class="header__right--secondary-btn">Signup</button>
+             <svg class="icons icons-sm " >
+                    <use xlink:href="icons.svg#hamburger" ></use>
+                </svg>
+            </div>
             </div>
       </header>
      
