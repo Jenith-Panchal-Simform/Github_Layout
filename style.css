@@ -21,6 +21,11 @@
   --primary-btn: rgb(31, 111, 235);
 }
 
+body {
+  background-color: var(--color-bg--main);
+  color: var(--font-color);
+}
+
 .container {
   height: 100vh;
 }
@@ -125,12 +130,6 @@ a {
 }
 
 /* main navigation styling */
-
-.main {
-  background-color: var(--color-bg--main);
-  color: var(--font-color);
-}
-
 .main-container {
   margin-bottom: 10rem;
 }
@@ -140,7 +139,7 @@ a {
   position: sticky;
   top: 0;
   padding: var(--rem-1) 0 0 0;
-  background-color: var(--color-bg--main);
+  
 }
 
 .main-container__nav {
