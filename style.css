@@ -19,6 +19,12 @@
   --rem-1: 1rem;
   --rem-half: 0.5rem;
   --primary-btn: rgb(31, 111, 235);
+
+  --color-calendar-graph-day-L1-bg:#9be9a8;
+    --color-calendar-graph-day-L2-bg:#40c463;
+    --color-calendar-graph-day-L3-bg:#30a14e;
+    --color-calendar-graph-day-L4-bg:#216e39;
+    --color-calendar-graph-day-bg:gray;
 }
 
 body {
@@ -41,7 +47,12 @@ a {
   fill: var(--font-color);
   color: var(--font-color);
 }
-
+.icons-big{
+  width:100%;
+  height: 100%;
+  fill: var(--font-color);
+  color: var(--font-color);
+}
 .icons-sm {
   height: 1rem;
   width: 1rem;
