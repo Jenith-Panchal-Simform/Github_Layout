@@ -8,146 +8,175 @@
       name="description"
       content="This page contains layout and template design of github using html and css"
     />
+    <!-- external stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <title>Github</title>
+    <meta
+            property="og:image"
+            content="https://tse1.mm.bing.net/th/id/OIP.sV7tva-728oySeOUL0-vOwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" />
+    <meta
+            property="og:description"
+            content="This website is a layout demo of github webpage." />
+    <meta property="og:title" content="Github Layout Demo" />
   </head>
   <body>
     <div class="container">
       <!-- header -->
       <header class="header">
-            <div class="header-container">
-                <nav class="header__left">
-                    <a href="#">
-                        <svg class="icons">
-                            <use xlink:href="icons.svg#logo"></use>
-                        </svg>
-                    </a>
-                <ul class="header__left-list">
-                    <li><a href="#">Why Github?</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Enterprise</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Marketplace</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-                </nav>
-            <div class="header__right">
-                <search class="" >
-                    <input type="text" placeholder="Search"  class="header__search">
-                </search>
-                <a href="#">SignIn</a>
-                <button class="header__right--secondary-btn">Signup</button>
-            </div>
-            
-            <div class="icon-visible header-small ">
-                <button class="header__right--secondary-btn">Signup</button>
-             <svg class="icons icons-sm " >
-                    <use xlink:href="icons.svg#hamburger" ></use>
-                </svg>
-            </div>
-            </div>
-      </header>
-     
-       <!-- main -->
-     <div class="main"> 
-       <div class="main-container">
-        <div class="main-container-navigation">
-        <nav class="main-container__nav">
-            <div class="main-container__nav-space"></div>
-            <div class="main-container__nav-content">
-                <ul class="main-container__nav-list">
-                    <li>
-                            <svg class="icons icons-sm">
-                                <use xlink:href="icons.svg#overview-book"></use>
-                            </svg>
-                       <a href="#"> OverView</a></li>
-                    <li>
-                          <svg class="icons icons-sm">
-                                <use xlink:href="icons.svg#repository"></use>
-                            </svg>
-                        <a href="#">Repositories</a></li>
-                    <li> <svg class="icons icons-sm">
-                                <use xlink:href="icons.svg#project"></use>
-                            </svg>
-                        <a href="#">Projects</a></li>
-                    <li>
-                         <svg class="icons icons-sm">
-                                <use xlink:href="icons.svg#package"></use>
-                            </svg><a href="#">Packages</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="header-container">
+          <nav class="header__left">
+            <a href="#">
+              <svg class="icons">
+                <use xlink:href="icons.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="header__left-list">
+              <li><a href="#">Why Github?</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Enterprise</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <search class="">
+              <input type="text" placeholder="Search" class="header__search" />
+            </search>
+            <a href="#">SignIn</a>
+            <button class="header__right--secondary-btn">Signup</button>
+          </div>
+
+          <div class="icon-visible header-small">
+            <button class="header__right--secondary-btn">Signup</button>
+            <svg class="icons icons-sm">
+              <use xlink:href="icons.svg#hamburger"></use>
+            </svg>
+          </div>
         </div>
-        <div class="main-wrapper">
-          <aside class="main-aside">
-            <section class="aside-top">
-                <a href="#"> <img src="images/ls.jpg" class="aside-profile" alt=""></a>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <div class="main-container">
+          <div class="main-container__navigation">
+            <nav class="main-container__nav">
+              <div class="main-container__nav-space"></div>
+              <div class="main-container__nav-content">
+                <ul class="main-container__nav-list">
+                  <li>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#overview-book"></use>
+                    </svg>
+                    <a href="#"> OverView</a>
+                  </li>
+                  <li>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#repository"></use>
+                    </svg>
+                    <a href="#">Repositories</a>
+                  </li>
+                  <li>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#project"></use>
+                    </svg>
+                    <a href="#">Projects</a>
+                  </li>
+                  <li>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#package"></use></svg
+                    ><a href="#">Packages</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="main-wrapper">
+            <aside class="main-wrapper__aside">
+              <section class="aside__top">
+                <a href="#">
+                  <img src="images/ls.jpg" class="aside__profile" alt=""
+                /></a>
                 <span>
                   <h1>Jenith Panchal</h1>
-                  <p>React | Node  | ❤️</p>
+                  <p>React | Node | ❤️</p>
                 </span>
-                <button class="secondary-btn ">Follow </button>
-                <div class="aside-follow-details">
-                    <span>
-                        <svg class="icons icons-sm">
-                            <use xlink:href="icons.svg#followers"></use>
-                        </svg>
-                        <p> <bold>29</bold> Followers</p></span>
-                    <span><p><bold>89</bold> following</p></span>
-                    <span>
-                        <svg class="icons icons-sm">
-                            <use xlink:href="icons.svg#star"></use>
-                        </svg>
-                        <p><bold>68</bold></p></span>
+                <button class="secondary-btn">Follow</button>
+                <div class="aside__follow-details">
+                  <span>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#followers"></use>
+                    </svg>
+                    <p><bold>29</bold> Followers</p></span
+                  >
+                  <span
+                    ><p><bold>89</bold> following</p></span
+                  >
+                  <span>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#star"></use>
+                    </svg>
+                    <p><bold>68</bold></p></span
+                  >
                 </div>
-            </section>
-            <section class="aside-bottom">
-              <h4>Achievements</h4>
-              <img src="images/acv.png" alt="Achievements Badge" class="aside-badge">
-              <a href="#">Block or Report</a>
-            </section>
-          </aside>
-          <main class="main-content">
-          <section class="repos-container">
-            <h4>Popular Repositories</h4>
-            <div class="main-repos">
-              <div class="repo-details">
-                <span>
-                  <a>Repo1</a>
-                  <span>Public</span>
-                </span>
-                 <div class="language-details">
-                    <span class="language-color"></span>
-                    <p>Typescript</p>
-                 </div>
-              </div>
-              <div class="repo-details">
-                <span>
-                  <a>Repo2</a>
-                  <span>Public</span>
-                </span>
-                <div class="language-details">
-                    <span class="language-color"></span>
-                    <p>Typescript</p>
-                 </div>
-              </div>
-              <div class="repo-details">
-                <span>
-                  <a>Repo3</a>
-                  <span>Public</span>
-                </span>
-                <div class="language-details">
-                    <span class="language-color"></span>
-                    <p>Typescript</p>
-                 </div>
-              </div>
-            </div>
-          </section>  
+              </section>
+              <section class="aside__bottom">
+                <h4>Achievements</h4>
+                <img
+                  src="images/acv.png"
+                  alt="Achievements Badge"
+                  class="aside-badge"
+                />
+                <a href="#">Block or Report</a>
+              </section>
+            </aside>
+            <main class="main-content">
+              <section class="main-content__repos-container">
+                <h4>Popular Repositories</h4>
+                <div class="main-repos">
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a>Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a>Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a>Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-          <section class="main-contributions">
-            <h2>75 Contributions in the last year</h2>
-            <div class="main-graph">
-                <img src="images/contribution.png" alt="Contribution graph" class="main-graph-image" >
-              <!-- <svg width="auto" height="128" class="js-calendar-graph-svg">
+              <section class="main-contributions">
+                <h2>75 Contributions in the last year</h2>
+                <div class="main-contributions__graph">
+                  <img
+                    src="images/contribution.png"
+                    alt="Contribution graph"
+                    class="main-graph-image"
+                  />
                 <g transform="translate(10, 20)" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:19148526,&quot;target&quot;:&quot;CONTRIBUTION_CALENDAR_SQUARE&quot;,&quot;user_id&quot;:null,&quot;originating_url&quot;:&quot;https://github.com/profile&quot;}}" data-hydro-click-hmac="43142f2e37b8fca33887f3a6932e04001b254b83d3c9f8a84eaee80eacc9f16b">
                     <g transform="translate(0, 0)">
                         <rect width="11" height="11" x="16" y="0" class="ContributionCalendar-day" rx="2" ry="2" data-count="0" data-date="2020-10-25" data-level="0"></rect>
@@ -644,80 +673,86 @@
                   <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="85">Fri</text>
                   <text text-anchor="start" class="ContributionCalendar-label" dx="-10" dy="81" style="display: none;">Sat</text>
               </g></svg> -->
-            </div>
-          </section>
+                </div>
+              </section>
 
-          <section class="main-contribution-activity">
-            <div class="main-contri-left">
-              <h3>Contribution Activity</h3>
-              <div class="contribution-left"> 
-                <p>
-                    <span id="after">October 2021</span>
-                </p> 
-                <div class="repo-updates">
-                    <svg class="icons icons-circle ">
+              <section class="main-contribution-activity">
+                <div class="main-contri__left">
+                  <h3>Contribution Activity</h3>
+                  <div class="contribution__left">
+                    <p>
+                      <span id="after">October 2021</span>
+                    </p>
+                    <div class="contribution__repo-updates">
+                      <svg class="icons icons-circle">
                         <use xlink:href="icons.svg#repository"></use>
-                    </svg>
-                    <h3>Created Repository</h3>
-                </div>
-                <div class="contri-info">
-                    <div class="contri-repo-details">
-                        <svg class="icons icons-sm">
-                            <use xlink:href="icons.svg#repository"></use>
-                        </svg> 
-                        <p> Profile/p2p-chat</p>
+                      </svg>
+                      <h3>Created Repository</h3>
                     </div>
-                  <span class="contri-info-desc">
-                    <p>Typescript</p>
-                    <p>Oct10</p>
-                  </span>
+                    <div class="contri__info">
+                      <div class="contri__repo-details">
+                        <svg class="icons icons-sm">
+                          <use xlink:href="icons.svg#repository"></use>
+                        </svg>
+                        <p>Profile/p2p-chat</p>
+                      </div>
+                      <span class="contri__info-desc">
+                        <p>Typescript</p>
+                        <p>Oct10</p>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="secondary-btn main-contri__button--left">
+                    Show more activity
+                  </button>
                 </div>
-                
-              </div>
-              <button class="secondary-btn main-contri-left-button">Show more activity</button>
-            </div>
-            <div class="main-contri-right">
-              <button class="contri-right--primarybtn primary-btn">
-                2026
-              </button>
-              <button class="contri-right--secondarybtn secondary-btn">
-                2025
-              </button>
-              <button class="contri-right--secondarybtn secondary-btn" >2024</button>
-              <button class="contri-right--secondarybtn secondary-btn" >2023</button>
-              <button class="contri-right--secondarybtn secondary-btn">2022</button>
-            </div>
-          </section>
-          </main>
+                <div class="main-contri-right">
+                  <button class="contri-right--primarybtn primary-btn">
+                    2026
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2025
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2024
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2023
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2022
+                  </button>
+                </div>
+              </section>
+            </main>
+          </div>
         </div>
-      </div>
-      <!-- footer -->
-       <footer class="footer">
-        <section class="footer-left">
+
+        <!-- footer -->
+        <footer class="footer">
+          <section class="footer__left">
             <p>copyright</p>
             <p>Terms</p>
             <p>Privacy</p>
             <p>Security</p>
             <p>Status</p>
             <p>Docs</p>
-        </section>
-        <section class="footer-mid">
-            <svg class="icons icons-mid"> 
-                <use href="icons.svg#logo"></use>
+          </section>
+          <section class="footer__mid">
+            <svg class="icons icons-mid">
+              <use href="icons.svg#logo"></use>
             </svg>
-        </section>
-        <section class="footer-right">
+          </section>
+          <section class="footer__right">
             <p>Contact</p>
             <p>Pricing</p>
             <p>API</p>
             <p>Training</p>
             <p>Blog</p>
             <p>About</p>
-        </section>
-       </footer>
+          </section>
+        </footer>
       </div>
-
-      
     </div>
   </body>
 </html>
