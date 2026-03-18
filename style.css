@@ -85,10 +85,8 @@ a {
 }
 
 .header-container {
-  height: fit-content;
   color: var(--font-color);
   display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: 1300px;
   margin: auto;
@@ -159,7 +157,6 @@ a {
 }
 
 .main-container__nav {
-
   max-width: 1270px;
   width: 100%;
   margin:  auto;
