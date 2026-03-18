@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Jenith" />
+    <meta
+      name="description"
+      content="This page contains layout and template design of github using html and css"
+    />
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <title>Github</title>
+    <meta
+            property="og:image"
+            content="https://tse1.mm.bing.net/th/id/OIP.sV7tva-728oySeOUL0-vOwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" />
+    <meta
+            property="og:description"
+            content="This website is a layout demo of github webpage." />
+    <meta property="og:title" content="Github Layout Demo" />
+    <meta property:"og:url" content= "https://jenith-panchal-simform.github.io/Github_Layout/"/>
+  </head>
+  <body >
+    <div class="container">
+      <!-- global header having search -->
+      <header class="header">
+        <div class="header-container">
+          <nav class="header__left">
+            <a href="#">
+              <svg class="icons">
+                <use xlink:href="icons.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="header__left-list">
+              <li><a href="#">Why Github?</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Enterprise</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <search class="">
+              <input type="text" placeholder="Search" class="header__search" />
+            </search>
+            <a href="#">SignIn</a>
+            <button class="header__right--secondary-btn">Signup</button>
+          </div>
+
+          <div class="icon-visible header-small">
+            <button class="header__right--secondary-btn">Signup</button>
+            <svg class="icons icons-sm">
+              <use xlink:href="icons.svg#hamburger"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="main">
+        <div class="main-container">
+          <div class="main-container__navigation">
+            <nav class="main-container__nav">
+              <div class="main-container__nav-space"></div>
+              <div class="main-container__nav-content">
+                <ul class="main-container__nav-list">
+                  <li>
+                    <a href="#">
+                      <svg class="icons icons-sm">
+                        <use xlink:href="icons.svg#overview-book"></use>
+                      </svg>
+                      <p> OverView</p> 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#repository"></use>
+                    </svg>
+                   <p> Repositories</p> 
+                  </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#project"></use>
+                    </svg>
+                   <p>Projects</p> 
+                  </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#package"></use></svg
+                    >
+                    <p>Packages</p>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="main-wrapper">
+            <aside class="main-wrapper__aside">
+              <section class="aside__top">
+                <div class="aside__profile-container">
+                  <a href="#">
+                    <img src="images/ls.jpg" class="aside__profile" alt=""
+                  /></a>
+                  <span>
+                    <h1>Jenith Panchal</h1>
+                    <p>React | Node | ❤️</p>
+                  </span>
+                </div>
+                <button class="secondary-btn">Follow</button>
+                <div class="aside__follow-details">
+                  <span>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#followers"></use>
+                    </svg>
+                    <p><bold>29</bold> Followers</p></span
+                  >
+                  <span
+                    ><p><bold>89</bold> following</p></span
+                  >
+                  <span>
+                    <svg class="icons icons-sm">
+                      <use xlink:href="icons.svg#star"></use>
+                    </svg>
+                    <p><bold>68</bold></p></span
+                  >
+                </div>
+              </section>
+              <section class="aside__bottom">
+                <p>Achievements</p>
+                <img
+                  src="images/acv.png"
+                  alt="Achievements Badge"
+                  class="aside-badge"
+                />
+                <a href="#">Block or Report</a>
+              </section>
+            </aside>
+            <main class="main-content">
+              <section class="main-content__repos-container">
+                <h2>Popular Repositories</h2>
+                <div class="main-repos">
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a href=" #">Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a href=" #">Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                  <div class="main-repos__repo-details">
+                    <span>
+                      <a href=" #">Repo1</a>
+                      <span>Public</span>
+                    </span>
+                    <div class="repo-details__language">
+                      <span class="language-color"></span>
+                      <p>Typescript</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="main-contributions">
+                <h2>75 Contributions in the last year</h2>
+                <div class="main-contributions__graph">
+                  <svg class="icons-big">
+                    <use xlink:href="icons.svg#graph"></use>
+                  </svg>
+                </div>
+              </section>
+
+              <section class="main-contribution-activity">
+                <div class="main-contri__left">
+                  <h3>Contribution Activity</h3>
+                  <div class="contribution__left">
+                    <p>
+                      <span id="after">October 2021</span>
+                    </p>
+                    <div class="contribution__repo-updates">
+                      <svg class="icons icons-circle">
+                        <use xlink:href="icons.svg#repository"></use>
+                      </svg>
+                      <h3>Created Repository</h3>
+                    </div>
+                    <div class="contri__info">
+                      <div class="contri__repo-details">
+                        <svg class="icons icons-sm">
+                          <use xlink:href="icons.svg#repository"></use>
+                        </svg>
+                        <p>Profile/p2p-chat</p>
+                      </div>
+                      <span class="contri__info-desc">
+                        <p>Typescript</p>
+                        <p>Oct10</p>
+                      </span>
+                    </div>
+                  </div>
+                  <button class="secondary-btn main-contri__button--left">
+                    Show more activity
+                  </button>
+                </div>
+                <div class="main-contri-right">
+                  <button class="contri-right--primarybtn primary-btn">
+                    2026
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2025
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2024
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2023
+                  </button>
+                  <button class="contri-right--secondarybtn secondary-btn">
+                    2022
+                  </button>
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+          <section class="footer__left">
+            <p>copyright</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Security</p>
+            <p>Status</p>
+            <p>Docs</p>
+          </section>
+          <section class="footer__mid">
+            <svg class="icons icons-mid">
+              <use href="icons.svg#logo"></use>
+            </svg>
+          </section>
+          <section class="footer__right">
+            <p>Contact</p>
+            <p>Pricing</p>
+            <p>API</p>
+            <p>Training</p>
+            <p>Blog</p>
+            <p>About</p>
+          </section>
+        </footer>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root variables */
+:root {
+  --color-bg--main: #010409;
+  --color-bg-header: #0d1117;
+  --color-gray:gray;
+  --font-color: white;
+  --margin-high: 19rem;
+  --border-radius-sm: 5px;
+  --font-size-sm: 1rem;
+  --color-hover-nav: #ff6600;
+  --rem-1: 1rem;
+  --rem-half: 0.5rem;
+  --rem-5:5rem;
+  --primary-btn: rgb(31, 111, 235);
+
+  --color-calendar-graph-day-L1-bg:#9be9a8;
+    --color-calendar-graph-day-L2-bg:#40c463;
+    --color-calendar-graph-day-L3-bg:#30a14e;
+    --color-calendar-graph-day-L4-bg:#216e39;
+    --color-calendar-graph-day-bg:gray;
+}
+
+body {
+  font-family: "Hubot Sans", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--color-bg--main);
+  color: var(--font-color);
+}
+
+
+
+a {
+  text-decoration: none;
+  color:var(--font-color)
+}
+a:hover{
+  cursor: pointer;
+}
+
+.icons {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--font-color);
+  color: var(--font-color);
+}
+.icons-big{
+  width:100%;
+  height: 100%;
+  fill: var(--font-color);
+  color: var(--font-color);
+}
+.icons-sm {
+  height: 1rem;
+  width: 1rem;
+}
+
+.icons-mid {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icons-circle {
+  border-radius: 50%;
+  background-color: var(--color-bg-header);
+  height: 2rem;
+  width: 2rem;
+  padding: var(--rem-half);
+}
+
+.icon-visible {
+  display: none;
+}
+
+/* header styling */
+
+.header {
+  background-color: var(--color-bg-header);
+  padding: var(--rem-1) 0;
+}
+
+.header-container {
+  color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header__left {
+  display: flex;
+  gap: var(--rem-1);
+}
+
+.header__left-list,
+.main-container__nav-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: var(--rem-1);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--rem-1);
+}
+
+.header__search {
+  padding: var(--rem-half) var(--rem-1);
+  background: none;
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+  border-radius: var(--border-radius-sm);
+}
+
+/* global  */
+
+.header__right--secondary-btn,
+.secondary-btn {
+  padding: var(--rem-half) var(--rem-1);
+  background: var(--color-bg-header);
+  border: 1px solid var(--font-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--font-color);
+  font-size: calc(var(--font-size-sm) - 0.1rem);
+}
+
+.primary-btn {
+  padding: var(--rem-half) var(--rem-1);
+  background: var(--primary-btn);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  color: var(--font-color);
+  font-size: calc(var(--font-size-sm) - 0.1rem);
+}
+
+/* main navigation styling */
+.main-container {
+  margin-bottom: 10rem;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.main-container__navigation {
+  background-color: var(--color-bg--main);
+  border-bottom: 2px solid var(--color-gray);
+  position: sticky;
+  top: 0;
+  padding: var(--rem-1) 0 0 0;
+}
+
+.main-container__nav {
+  max-width: 1270px;
+  width: 100%;
+  margin:  auto;
+  display: flex;
+}
+
+.main-container__nav-list li{
+  padding: var(--rem-1) 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.main-container__nav-list li:hover {
+  border-bottom-color: var(--color-hover-nav);
+  cursor: pointer;
+}
+.main-container__nav-list li a {
+  display: flex;
+  align-items: center;
+  gap:var(--rem-half)
+}
+.main-container__nav-space {
+  padding: 0 var(--rem-1);
+  flex: 1;
+}
+
+.main-container__nav-content {
+  flex: 3;
+  padding: 0 var(--rem-1);
+}
+
+.main-wrapper {
+  max-width: 1270px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.main-wrapper__aside {
+  flex: 1;
+  z-index: 105;
+  padding: 0 var(--rem-1);
+}
+
+.main-content {
+  flex: 3;
+}
+
+.aside__top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rem-1);
+  padding: var(--rem-1) 0;
+  z-index: 10;
+  border-bottom: 2px solid white;
+}
+
+.aside__top span p {
+  color: var(--color-gray);
+}
+
+.aside__profile {
+  z-index: 2000;
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: -10%;
+}
+
+.aside__follow-details {
+  display: flex;
+  gap: var(--rem-1);
+}
+
+.aside__follow-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.aside__bottom {
+  padding: var(--rem-1) 0;
+}
+
+.aside-badge {
+  display: block;
+  height: var(--rem-5);
+  width: var(--rem-5);
+}
+
+/* main-right */
+
+.main-content {
+  padding: 0 var(--rem-1);
+}
+
+.main-content__repos-container {
+  margin: var(--rem-1) 0 0 0;
+}
+
+.main-repos {
+  margin: var(--rem-1) 0 0 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--rem-1);
+}
+
+.main-repos__repo-details {
+  border: 1px solid white;
+  border-radius: var(--border-radius-sm);
+  padding: var(--rem-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--rem-1);
+}
+
+.repo-details__language,
+.contri-main-repos__repo-details,
+.contri__repo-details {
+  display: flex;
+  gap: var(--rem-half);
+}
+
+.language-color {
+  height: var(--rem-1);
+  width: var(--rem-1);
+  background-color: var(--color-hover-nav);
+  border-radius: 50%;
+}
+
+.main-repos__repo-details span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-contributions {
+  margin-top: var(--rem-1);
+}
+
+.main-contributions__graph {
+  margin-top: var(--rem-1);
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius-sm);
+  padding: var(--rem-1);
+}
+
+.main-graph-image {
+  width: 100%;
+}
+
+.main-contribution-activity {
+  margin: var(--rem-1) 0 0 0;
+  display: flex;
+}
+
+.main-contri__left {
+  flex: 5;
+}
+
+.main-contri__button--left {
+  margin-top: var(--rem-1);
+  width: 100%;
+}
+
+.contribution__left {
+  border-left: 2px solid var(--color-gray);
+  position: relative;
+  padding: 0 var(--rem-1);
+  margin: var(--rem-1) 0 0 0;
+}
+
+.contribution__left p {
+  position: relative;
+  overflow: hidden;
+}
+
+.contri__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contri__info-desc {
+  display: flex;
+  gap: var(--rem-1);
+}
+
+#after::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: darkgray;
+  top: 50%;
+  padding: 0 var(--rem-half);
+  margin: 0 0 0 var(--rem-1);
+}
+
+.contribution__repo-updates {
+  display: flex;
+  gap: var(--rem-1);
+  margin: var(--rem-1) 0 var(--rem-half) -2rem;
+  align-items: center;
+}
+
+.main-contri-right {
+  flex: 1;
+  padding-left: var(--rem-1);
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--rem-1);
+}
+
+/* footer styles */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--rem-1);
+  max-width: 1270px;
+  margin: auto;
+  border-top: 1px solid var(--color-gray);
+}
+
+.footer__left,
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rem-1);
+}
+
+.footer__mid {
+  display: flex;
+  justify-content: center;
+}
+
+/* media queries fo resposniveness */
+
+@media (width < 980px) {
+  /* header styles */
+  .header {
+    justify-content: space-between;
+    padding: var(--rem-1);
+  }
+
+  .header__left-list {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .icon-visible {
+    display: block;
+  }
+
+  .header-small {
+    display: flex;
+    align-items: center;
+    gap: var(--rem-1);
+  }
+
+  /* main styling */
+
+  /* align as main-aside->nav_container-> main->content */
+  .main-wrapper{
+    display: contents; 
+    /* makes main-aside and main-content act like direct children */
+  }
+
+  .main-wrapper__aside{
+    order:1;
+  }
+
+  .main-container__navigation{
+    position:static;
+    order:2;
+  }
+  .main-content{
+    order:3;
+  }
+
+  .main-container__nav-content {
+    flex:0;
+  }
+
+
+  /* reduce image size and fd to row */
+  .aside__profile-container
+  {
+    display: flex;
+    gap:var(--rem-1)
+  }
+
+  .aside__profile{
+    max-width: 100px;
+  }
+
+  /* hide extra blank div for space */
+  .main-container__nav-space
+  {
+    display: none;
+  }
+
+  .main-repos{
+     grid-template-columns:auto;
+  }
+
+  /* remove the year wise links */
+  .main-contri-right{
+    display: none;
+  }
+
+  /* add overflow for mobile screen in main_nav */
+  .main-container__nav{
+    overflow-x: auto;
+  }
+
+  /* footer styles */
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 var(--rem-1);
+  }
+
+  .footer__mid {
+    display: none;
+  }
+
+  .footer__left,
+  .footer__right {
+    gap: var(--rem-half);
+    flex-wrap: wrap;
+  }
+}
